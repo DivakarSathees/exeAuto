@@ -1,0 +1,34 @@
+{
+  "name": "selenium_node",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "bin": "dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chrome-paths": "^1.0.1",
+    "chromedriver": "^135.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "multer": "^1.4.5-lts.1",
+    "puppeteer": "^24.6.1",
+    "xlsx": "^0.18.5"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/puppeteer/.local-chromium/**/*",
+      "index.html",
+      "uploads/*"
+    ]
+  },
+  "targets": [
+    "node18-win-x64"
+  ],
+  "puppeteer_skip_chromium_download": "true"
+}
